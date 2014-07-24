@@ -8,7 +8,7 @@
 cd ./src
 
 #compile to object code
-gcc -I ../h ./* -o magic-word
+gcc -I ../include ./* -o magic-word
 
 #move executable outside source file
 mv -f ./magic-word ../ 
