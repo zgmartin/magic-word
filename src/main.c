@@ -6,9 +6,11 @@
 */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
 #include <stdbool.h>
+
 #include "print.h"
 #include "main.h"
 #include "animate.h"
@@ -23,17 +25,18 @@ int main()
   
   print_intro();
   
-  //password attemp loop
+  //password attempt loop
   do
   {
     print_security_level(attempt_number);
     scanf("%99s", password_attempt);
     is_permission = check_password(password, password_attempt);
     
-    //print cases for password attemtp
+    //print cases for password attempt
     if(is_permission == false && attempt_number == MAX_ATTEMPT)
     {
       print_password_denied(attempt_number, MAX_ATTEMPT);
+      system("animate ./data/ned.gif");
       animate();
     }
     else if(is_permission == true)
