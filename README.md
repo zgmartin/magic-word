@@ -4,8 +4,10 @@
 
 ### About:
 
-name: magic-word
-function: password program
+#####name: 
+magic-word
+#####function:
+password program
 
 This is a program inspired by the movie Jurassic Park. Specifically, the scene where hacker Dennis Nedry places a password protected program on his machine to prevent users form accessing the main security grid of Jurassic Park (http://www.youtube.com/watch?v=RfiQYRn7fBg).
 
