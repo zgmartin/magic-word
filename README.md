@@ -16,3 +16,8 @@ Nedry was the first hacker I came in contact with as a child. And, from that poi
 * `cd /to/directory/where/files/are`
 * `bash ./compile.sh`
 * `./magic-word`
+
+## note:
+-      system("animate ./data/ned.gif"); #Linux
++      system("qlmanage -p ./data/ned.gif"); #Mac
+

@@ -36,7 +36,7 @@ int main()
     if(is_permission == false && attempt_number == MAX_ATTEMPT)
     {
       print_password_denied(attempt_number, MAX_ATTEMPT);
-      system("animate ./data/ned.gif");
+      system("qlmanage -p ./data/ned.gif");
       animate();
     }
     else if(is_permission == true)
